@@ -17,5 +17,6 @@ public class SougouInput
   public void display()
   {
     skin.display();
+    skin.testAbstract();
   }
 }
