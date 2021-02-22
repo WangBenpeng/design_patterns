@@ -2,21 +2,32 @@ package com.pengo.prototype.demo2;
 
 /**
  * @author pengo
- * @description:
+ * @description:  浅克隆
  * @date: 2021/2/10
  */
 public class Citation implements Cloneable
 {
-  private String name;
+//  private String name;
+//
+//  public String getName()
+//  {
+//    return name;
+//  }
+//
+//  public void setName(String name)
+//  {
+//    this.name = name;
+//  }
+  private Student stu;
 
-  public String getName()
+  public Student getStu()
   {
-    return name;
+    return stu;
   }
 
-  public void setName(String name)
+  public void setStu(Student stu)
   {
-    this.name = name;
+    this.stu = stu;
   }
 
   @Override
@@ -27,6 +38,6 @@ public class Citation implements Cloneable
 
   public void show()
   {
-    System.out.println(name + " show the citation");
+    System.out.println(stu.getName() + " show the citation");
   }
 }
